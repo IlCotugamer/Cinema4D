@@ -1,0 +1,76 @@
+<html>
+	<head>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Hind:wght@300&family=Merriweather:ital,wght@1,700&family=Nunito+Sans&display=swap" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" type="image/x-icon" href="file/logo.ico" />
+		<title>Cinema Da Cotugno</title>
+
+		<link rel="stylesheet" href="file/stile.css">
+	</head>
+
+	<body>
+		<div class="titolo">
+			<h1>Cinema 4D</h1>
+		</div>
+		
+		<div class="navbar">
+			<a href="https://www.intesasanpaolo.com/" target="_blank">Quanti Soldi Hai in Banca ?</a>
+		</div>
+
+		<div class="colonna">
+			<a id="sale">Sala N° 1</a><br>
+			<img id="img0"></img>
+
+			<p id="posti_sala1">150 / 150 Posti disponibili</p>
+			<div class="bottoni">
+				<div class="numberfield">
+					<label for="number_field_intero1">N° Biglietti ridotti &nbsp</label><input type="number" id="number_field_ridotto1" min="0" max="150" step="1" value="0" onchange="cassa(1);"><br>
+					<label for="number_field_ridotto1">N° Biglietti interi &nbsp</label><input type="number" id="number_field_intero1" min="0" max="150" step="1" value="0" onchange="cassa(1);">
+				</div>
+				<input type="button" id="bottone_acquisto1" value="Conferma Acquisto" onclick="cassa(1, true);"><br>
+				<input type="button" id="bottone_reset1" value="Reset Sala" onclick="reset(1);">
+			</div>
+			<p id="prezzo_pre1">Prezzo dei biglietti: 0€</p>
+			<p id="intero">Prezzo  per biglietto  intero: 8€</p>
+		</div>
+		<div class="colonna">
+			<a id="sale">Sala N° 2</a><br>
+			<img id="img1"></img>
+
+			<p id="posti_sala2">170 / 170 Posti disponibili</p>
+			<div class="bottoni">
+				<div class="numberfield">
+					<label for="number_field_intero2">N° Biglietti ridotti &nbsp</label><input type="number" id="number_field_ridotto2" min="0" max="150" step="1" value="0" onchange="cassa(2);"><br>
+					<label for="number_field_ridotto2">N° Biglietti interi &nbsp</label><input type="number" id="number_field_intero2" min="0" max="150" step="1" value="0" onchange="cassa(2);">
+				</div>
+				<input type="button" id="bottone_acquisto2" value="Conferma Acquisto" onclick="cassa(2, true);"><br>
+				<input type="button" id="bottone_reset2" value="Reset Sala" onclick="reset(2);">
+			</div>
+			<p id="prezzo_pre2">Prezzo dei biglietti: 0€</p>
+			<p id="incasso">Totale incasso: 0€</p>
+		</div>
+
+		<div class="colonna">
+			<a id="sale">Sala N° 3</a><br>
+			<img id="img2"></img>
+
+			<p id="posti_sala3">200 / 200 Posti disponibili</p>
+			<div class="bottoni">
+				<div class="numberfield">
+					<label for="number_field_intero3">N° Biglietti ridotti &nbsp</label><input type="number" id="number_field_ridotto3" min="0" max="150" step="1" value="0" onchange="cassa(3);"><br>
+					<label for="number_field_ridotto3">N° Biglietti interi &nbsp</label><input type="number" id="number_field_intero3" min="0" max="150" step="1" value="0" onchange="cassa(3);">
+				</div>
+				<input type="button" id="bottone_acquisto3" value="Conferma Acquisto" onclick="cassa(3, true);"><br>
+				<input type="button" id="bottone_reset3" value="Reset Sala" onclick="reset(3);">
+			</div>
+			<p id="prezzo_pre3">Prezzo dei biglietti: 0€</p>
+			<p id="ridotto">Prezzo per biglietto ridotto: 5€</p>
+		</div>
+		<footer class="footer">
+			<h2>Disegnato e Sviluppato Da Andrea Cotugno 3iB</h2>
+		</footer>
+		<script type="text/javascript" src="file/script.js"></script>
+	</body>
+</html>
